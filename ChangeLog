@@ -1,0 +1,135 @@
+* Thu Sep 29 2022 Tommy Reynolds
+- (6c5254e) Trivial example. (HEAD -> master, origin/master, origin/HEAD)
+
+* Thu Sep 29 2022 Tommy Reynolds
+- (f07fcde) Sample "just go away" web site.
+
+* Thu Aug 19 2021 mengqi
+- (903da51) update readme.md for v0.1.6
+
+* Thu Aug 19 2021 mengqi
+- (12806d3) update debug log in serveHTTP()
+
+* Thu Aug 19 2021 mengqi
+- (fcfc1a1) Fix directory traversal vulnerability under Windows (#29)
+
+* Sat Jun 27 2020 mengqi
+- (06c4cf7) update readme.md for v0.1.5
+
+* Tue Jun 23 2020 mengqi
+- (843abd7) Add command line option: -b, -bind-ip. With this option, you can bind one or more IP addresses to the ran web server.
+
+* Fri Jan 31 2020 mengqi
+- (6c35aa6) update readme.md: update url of the logo picture; update example of 'Running with Docker'
+
+* Fri Jan 31 2020 mengqi
+- (34b2227) Merge pull request #26 from nrjais/master
+
+* Wed Jan 29 2020 Neeraj Jaiswal
+- (6540df4) Update readme with instructions to run with docker
+
+* Wed Jan 29 2020 Neeraj Jaiswal
+- (5d6af88) Add dockerfile
+
+* Sat Aug 10 2019 mengqi
+- (f76b940) if necessary, do not list 404 or 401 file in directory listing page
+
+* Sat Aug 10 2019 mengqi
+- (2a2bbef) fix #21: URL for 404 page now return status 404
+
+* Sat Aug 10 2019 mengqi
+- (2b3af1b) add go.mod, go.sum
+
+* Sun Apr 21 2019 mengqi
+- (847350d) Merge pull request #20 from CodeLingoBot/rewrite-m3ng9i-ran-effective-go-update-comment-first-word-as-subject
+
+* Mon Apr 15 2019 CodeLingoBot
+- (e2e0bc7) Fix function comments based on best practices from Effective Go
+
+* Sun Apr 7 2019 mengqi
+- (45c13ef) update readme for v0.1.4
+
+* Sun Apr 7 2019 mengqi
+- (1b8aefe) update usage information
+
+* Sun Jan 27 2019 mengqi
+- (0f08397) Merge pull request #16 from toby/path-fix
+
+* Tue Jan 22 2019 Toby Padilla
+- (d5c75e1) Use HTML template for directory listing.
+
+* Mon Jan 7 2019 mengqi
+- (fb2a28f) add response header 'Access-Control-Allow-Methods: *' and 'Access-Control-Allow-Headers: *' if command-line option -cors=true
+
+* Mon Jan 7 2019 mengqi
+- (759143b) update build.py: add 'ran.go' to the build command
+
+* Mon Jan 7 2019 mengqi
+- (5b06893) fix: close file after open
+
+* Wed Dec 12 2018 mengqi
+- (2923c41) add -no-cache and -cors option for api test; write X-REAL-IP to the log; I'll update the readme later.
+
+* Fri Dec 7 2018 mengqi
+- (00bcbe5) rename command-line option -allow-origin to -cors
+
+* Fri Dec 7 2018 mengqi
+- (2768cd3) if command option allow-origin is true, add response header 'Access-Control-Allow-Credentials: true'; use a more flexibility value for Access-Control-Allow-Origin header
+
+* Thu Dec 6 2018 mengqi
+- (7d36ebd) if the request header contains X-Real-Ip, write the value to the log. e.g. [IP: 127.0.0.1 (X-REAL-IP: 11.22.33.44)]
+
+* Thu Dec 6 2018 mengqi
+- (cf6b9f3) move version information from global/config.go to ran.go
+
+* Thu Dec 6 2018 mengqi
+- (b4a1e29) update usage information for -serve-all and -no-cache option
+
+* Thu Dec 6 2018 mengqi
+- (c3d708a) if -no-cache option is set to true, Last-Modified header will not be write to the response
+
+* Thu Dec 6 2018 mengqi
+- (528ca72) add -allow-origin option in order to add a 'Access-Control-Allow-Origin: *' header in the response
+
+* Thu Dec 6 2018 mengqi
+- (6240351) add -no-cache option in order to add a no-cache header in the response
+
+* Mon Mar 26 2018 mengqi
+- (bd7fcf0) add MIT License (sync with dev:5c6c822)
+
+* Mon Aug 8 2016 mengqi
+- (ff83877) update to v0.1.3, add changelog (sync with dev:828d0b4)
+
+* Mon Aug 8 2016 mengqi
+- (888f078) print the listening URLs after Ran starts. For example: Listening on http://127.0.0.1:8080 (via #6)
+
+* Mon Aug 8 2016 mengqi
+- (408e527) add -sa, --serve-all parameter to set if skip paths that start with dot
+
+* Wed Nov 25 2015 mengqi
+- (e0f675a) add basic auth; add -auth-method parameter; update log for auth method
+
+* Wed Nov 18 2015 mengqi
+- (cddbc74) add trailing slash if the request path is a directory and the directory contains a index file
+
+* Thu Oct 29 2015 mengqi
+- (cb7b3f6) add TLS encryption, add custom 401 file (sync with dev:b177b5b)
+
+* Sun Oct 4 2015 mengqi
+- (8318a6b) fix #4: unesacpe parent directory before getting it's modification time
+
+* Sat Oct 3 2015 mengqi
+- (585f201) Merge pull request #2 from abh1nav/patch-1
+
+* Sat Oct 3 2015 mengqi
+- (db18911) Merge pull request #1 from JackDanger/patch-1
+
+* Sat Oct 3 2015 Abhinav Ajgaonkar
+- (87b3d53) Typo in README example for root flag
+
+* Sat Oct 3 2015 Jack Danger Canty
+- (f84feac) Helping with some English grammar in the README
+
+* Thu Oct 1 2015 mengqi
+- (844037f) first commit on master branch (sync with dev:42c3e7d)
+
