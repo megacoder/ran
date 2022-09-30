@@ -1,0 +1,11 @@
+# Our volatile stuff:
+ran
+# Added from https://raw.githubusercontent.com/github/gitignore/master/Go.gitignore
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
