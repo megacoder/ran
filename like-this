@@ -1,0 +1,8 @@
+#/bin/zsh
+exec /bin/sudo ./ran							\
+	-404=/404.html							\
+	-cert=cert.pem							\
+	-key=key.pem							\
+	-port=80							\
+	-root=xxx							\
+	"${@}"
